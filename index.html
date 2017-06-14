@@ -58,19 +58,80 @@ section {
 }
 
 .right_conten {
-  padding: 10px;
+  padding: 10px 20px;
   height: 100%;
   -moz-box-flex: 1;
   -webkit-box-flex: 1;
   box-flex: 1;
 }
 
+.x_welcome {
+  height: 50px;
+}
+
 .row_block {
   border: 1px solid #dddddd;
+  border-bottom: 0;
+}
+
+.right_conten>div:last-child {
+  border-bottom: 1px solid #dddddd;
 }
 
 .row_block>div {
-  border: 1px solid #dddddd;
+  height: 300px;
+}
+
+.deal {
+  padding: 30px 20px;
+}
+
+.deal_title {
+  position: relative;
+}
+
+.deal_wrapper {
+  width: 290px;
+  height: 190px;
+  overflow: hidden;
+  border-radius: inherit;
+  background-color: #e8e8e8;
+  margin-top: 10px;
+}
+
+.deal_price {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+  font-size: 28px;
+  text-align: center;
+  color: #fff;
+  background-color: #fc1703;
+  border: 1px solid #dd191d;
+  border-radius: 8px;
+  display: block;
+  width: 110px;
+  height: 80px;
+  line-height: 70px;
+}
+
+.deal_price .text {
+  white-space: pre;
+  vertical-align: middle;
+}
+
+.deal_max {
+  font-size: 16px;
+  line-height: 23px;
+  display: block;
+  margin-top: 10px;
+}
+
+.recommend_flash {
+	border-left: 1px solid #dddddd;
+  width: 100%;
+  height: 100%;
 }
 </style>
 
@@ -91,18 +152,40 @@ section {
       </nav>
     </div>
     <div class="right_conten">
-      <div class="row">欢迎文字</div>
+      <div class="row x_welcome">欢迎文字</div>
       <div class="row row_block">
-        <div class="col-md-6">优酷</div>
-        <div class="col-md-6">视频推荐位</div>
+        <div class="col-md-6 deal">
+          <div class="deal_title">优酷七天会员卷仅需1元</div>
+          <div>
+            <div class="deal_wrapper">
+              <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=161007081,2951758421&fm=80&w=179&h=119&img.JPEG">
+            </div>
+            <div class="deal_price">
+              <span class="text">￥1.00</span>
+            </div>
+          </div>
+          <div class="deal_max">限量<span>100</span>份</div>
+        </div>
+        <div class="col-md-6">
+          <div class="recommend_flash">
+            <object class="adClickCss" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="100%" height="100%">
+              <param name="movie" value="http://122.225.7.5:81/v6/flash/神龙战士-1536X960.swf?IsAutoPlay=1">
+              <param name="quality" value="high">
+              <param name="wmode" value="transparent">
+              <param name="allowFullScreen" value="true" />
+              <embed wmode="transparent" src="http://122.225.7.5:81/v6/flash/神龙战士-1536X960.swf?IsAutoPlay=1" allowfullscreen="true" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="100%" height="100%" title="Adobe Flash Player">
+            </object>
+            <iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe>
+          </div>
+        </div>
       </div>
-      <div>
-        <div>E3联赛</div>
-        <div>日期控件</div>
+      <div class="row row_block">
+        <div class="col-md-6">E3联赛</div>
+        <div class="col-md-6">日期控件</div>
       </div>
-      <div>
-        <div>栏目1</div>
-        <div>栏目2</div>
+      <div class="row row_block">
+        <div class="col-md-6">栏目1</div>
+        <div class="col-md-6">栏目2</div>
       </div>
     </div>
   </section>
