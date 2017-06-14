@@ -14,7 +14,6 @@
   <!-- Fullcalendar core CSS -->
   <link href="lib/fullcalendar/fullcalendar.min.css" rel="stylesheet" />
   <link href="lib/fullcalendar/fullcalendar.print.min.css" rel="stylesheet" media='print' />
-
   <link href="style.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="league.css">
 </head>
@@ -43,19 +42,19 @@
     <div class="right_conten">
       <div class="row row_block league">
         <div class="col-md-6 league_images">
-            <div class="top_popup">
-              <div class="left_btn">
-                <svg class="svg_icon" viewBox="0 0 1024 1024">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow_svg"></use>
-                </svg>
-              </div>
-              <div class="right_btn">
-                <svg class="svg_icon right_svg" viewBox="0 0 1024 1024">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow_svg"></use>
-                </svg>
-              </div>
-              <div class="focus-num"><span class="current">1</span>/<span class="num">0</span></div>
-              <div class="img_list">
+          <div class="top_popup">
+            <div class="left_btn">
+              <svg class="svg_icon" viewBox="0 0 1024 1024">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow_svg"></use>
+              </svg>
+            </div>
+            <div class="right_btn">
+              <svg class="svg_icon right_svg" viewBox="0 0 1024 1024">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow_svg"></use>
+              </svg>
+            </div>
+            <div class="focus-num"><span class="current">1</span>/<span class="num">0</span></div>
+            <div class="img_list">
               <a class="up_a img_a img_a_0" href="{{obj.url}}" style="z-index: 1;opacity: 1;-webkit-animation: img_act 1s linear forwards;" target="_self">
                 <img class="up_img  img_0" src="http://image.gamersky.com/gameshd/2017/20170613_lmh_241_2.jpg" alt="0">
                 <div class="i_title">天蝎座版《极限竞速7》体验：画面简直6爆！</div>
@@ -73,8 +72,8 @@
                 <div class="i_title">《超级马里奥：奥德赛》10月27日发售！</div>
               </a>
             </div>
-            </div>
-            <div class="progress_bottom_win"></div>
+          </div>
+          <div class="progress_bottom_win"></div>
         </div>
         <div class="col-md-6 league_schedule">
           <div id='calendar'></div>
@@ -83,9 +82,105 @@
           </div>
         </div>
       </div>
+      <div class="row row_block" style="z-index: 3;">
+        <div class="col-md-12">
+          <div class="center-block">
+            <div class="pull-left">总赛程</div>
+            <div class="pull-right"><a href="" class="x-btn">分省赛程》</a></div>
+          </div>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th class="text-center">比赛时间</th>
+                <th class="text-right">战队</th>
+                <th class="text-center">比分</th>
+                <th class="text-left">战队</th>
+                <th class="text-center">比赛视频</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center">6月15日 17：00</td>
+                <td class="text-right">Snake</td>
+                <td class="text-center">0-0</td>
+                <td class="text-left">DNA</td>
+                <td class="text-center">观看直播</td>
+              </tr>
+              <tr>
+                <td class="text-center">6月15日 17：00</td>
+                <td class="text-right">Snake</td>
+                <td class="text-center">0-0</td>
+                <td class="text-left">DNA</td>
+                <td class="text-center">观看直播</td>
+              </tr>
+              <tr>
+                <td class="text-center">6月15日 17：00</td>
+                <td class="text-right">Snake</td>
+                <td class="text-center">0-0</td>
+                <td class="text-left">DNA</td>
+                <td class="text-center">观看直播</td>
+              </tr>
+              <tr>
+                <td class="text-center">6月15日 17：00</td>
+                <td class="text-right">Snake</td>
+                <td class="text-center">0-0</td>
+                <td class="text-left">DNA</td>
+                <td class="text-center">观看直播</td>
+              </tr>
+              <tr>
+                <td class="text-center">6月15日 17：00</td>
+                <td class="text-right">Snake</td>
+                <td class="text-center">0-0</td>
+                <td class="text-left">DNA</td>
+                <td class="text-center">观看直播</td>
+              </tr>
+              <tr>
+                <td class="text-center">6月15日 17：00</td>
+                <td class="text-right">Snake</td>
+                <td class="text-center">0-0</td>
+                <td class="text-left">DNA</td>
+                <td class="text-center">观看直播</td>
+              </tr>
+            </tbody>
+          </table>
+          <nav aria-label="Page navigation">
+            <ul class="pagination">
+              <li>
+                <a href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li>
+                <a href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
       <div class="row row_block">
-        <div class="col-md-6">栏目1</div>
-        <div class="col-md-6">栏目2</div>
+        <div class="col-md-12">
+          <div class="recommend_flash pull-left" style="width:510px">
+            <object class="adClickCss" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="510" height="100%">
+              <param name="movie" value="http://122.225.7.5:81/v6/flash/神龙战士-1536X960.swf?IsAutoPlay=0">
+              <param name="quality" value="high">
+              <param name="wmode" value="transparent">
+              <param name="allowFullScreen" value="true" />
+              <embed wmode="transparent" src="http://122.225.7.5:81/v6/flash/神龙战士-1536X960.swf?IsAutoPlay=0" allowfullscreen="true" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="100%" height="100%" title="Adobe Flash Player">
+            </object>
+            <iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe>
+          </div>
+          <div class="pull-right">
+            <div class="pull-right"><a href="" class="x-btn">参赛战队》</a></div>
+            <div><img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=1148966974,1682250033&fm=80&w=179&h=119&img.JPEG"></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -103,8 +198,8 @@ $(document).ready(function() {
   $('#calendar').fullCalendar({
     header: false,
     firstDay: 0,
-    height: 380,
-    contentHeight: 380,
+    height: 300,
+    contentHeight: 300,
     defaultDate: '2017-05-12',
     navLinks: false, // can click day/week names to navigate views
     editable: false,
@@ -227,7 +322,6 @@ function choseImg(num, bool) {
   $('.img_a_' + num).css('animation', 'img_act 1s linear forwards');
   $('.current').text(num + 1);
 }
-
 </script>
 
 </html>

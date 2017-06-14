@@ -158,7 +158,7 @@ a, a:hover, a:focus {
 
 .league_btn {
   position: relative;
-  bottom: 70px;
+  bottom: -10px;
   background-color: #ff7043;
   border: 1px solid #f4511e;
   border-radius: 8px;
@@ -171,6 +171,28 @@ a, a:hover, a:focus {
   color: #fff;
   display: block;
   cursor: pointer;
+}
+
+.x-btn {
+  margin: 10px;
+  display: block;
+  width: 110px;
+  height: 30px;
+  font-size: 14.0px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 8px;
+  color: #888888;
+  border: 1px solid #bbbbbb;
+}
+
+nav {
+  position: absolute;
+  bottom: 0;
+}
+
+nav>ul.pagination {
+  margin: 0;
 }
 
 /*赛程样式*/
