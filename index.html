@@ -11,129 +11,15 @@
   <title></title>
   <!-- Bootstrap core CSS -->
   <link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <!-- Fullcalendar core CSS -->
+  <link href="lib/fullcalendar/fullcalendar.min.css" rel="stylesheet" />
+  <link href="lib/fullcalendar/fullcalendar.print.min.css" rel="stylesheet" media='print' />
+  <link href="style.css" rel="stylesheet" />
 </head>
 <svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <symbol id="username_svg">
   </symbol>
 </svg>
-<style type="text/css">
-html,
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
-section {
-  display: -moz-box;
-  display: -webkit-box;
-  display: box;
-}
-
-.left_conten {
-  width: 200px;
-}
-
-.x-menus>ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 10px;
-}
-
-.x-menus>ul>li {
-  display: block;
-  border: 1px solid #bbbbbb;
-  width: 170px;
-  height: 40px;
-  font-size: 14px;
-  margin-top: 15px;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 5px;
-}
-
-.x-menus>ul>li:first-child {
-  margin-top: 0px;
-}
-
-.right_conten {
-  padding: 10px 20px;
-  height: 100%;
-  -moz-box-flex: 1;
-  -webkit-box-flex: 1;
-  box-flex: 1;
-}
-
-.x_welcome {
-  height: 50px;
-}
-
-.row_block {
-  border: 1px solid #dddddd;
-  border-bottom: 0;
-}
-
-.right_conten>div:last-child {
-  border-bottom: 1px solid #dddddd;
-}
-
-.row_block>div {
-  height: 300px;
-}
-
-.deal {
-  padding: 30px 20px;
-}
-
-.deal_title {
-  position: relative;
-}
-
-.deal_wrapper {
-  width: 290px;
-  height: 190px;
-  overflow: hidden;
-  border-radius: inherit;
-  background-color: #e8e8e8;
-  margin-top: 10px;
-}
-
-.deal_price {
-  position: absolute;
-  bottom: 40px;
-  right: 40px;
-  cursor: pointer;
-  font-size: 28px;
-  text-align: center;
-  color: #fff;
-  background-color: #fc1703;
-  border: 1px solid #dd191d;
-  border-radius: 8px;
-  display: block;
-  width: 110px;
-  height: 80px;
-  line-height: 70px;
-}
-
-.deal_price .text {
-  white-space: pre;
-  vertical-align: middle;
-}
-
-.deal_max {
-  font-size: 16px;
-  line-height: 23px;
-  display: block;
-  margin-top: 10px;
-}
-
-.recommend_flash {
-	border-left: 1px solid #dddddd;
-  width: 100%;
-  height: 100%;
-}
-</style>
 
 <body>
   <section>
@@ -141,7 +27,7 @@ section {
       <nav class="x-navbar">
         <div class="x-menus">
           <ul>
-            <li>E<sup>3</sup>联赛</li>
+          	<li><a href="league.html">E<sup>3</sup>联赛</a></li>
             <li>竞情嗨</li>
             <li>美女直播</li>
             <li>影音特惠</li>
@@ -158,7 +44,7 @@ section {
           <div class="deal_title">优酷七天会员卷仅需1元</div>
           <div>
             <div class="deal_wrapper">
-              <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=161007081,2951758421&fm=80&w=179&h=119&img.JPEG">
+              <img src="">
             </div>
             <div class="deal_price">
               <span class="text">￥1.00</span>
@@ -169,33 +55,98 @@ section {
         <div class="col-md-6">
           <div class="recommend_flash">
             <object class="adClickCss" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="100%" height="100%">
-              <param name="movie" value="http://122.225.7.5:81/v6/flash/神龙战士-1536X960.swf?IsAutoPlay=1">
+              <param name="movie" value="http://122.225.7.5:81/v6/flash/神龙战士-1536X960.swf?IsAutoPlay=0">
               <param name="quality" value="high">
               <param name="wmode" value="transparent">
               <param name="allowFullScreen" value="true" />
-              <embed wmode="transparent" src="http://122.225.7.5:81/v6/flash/神龙战士-1536X960.swf?IsAutoPlay=1" allowfullscreen="true" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="100%" height="100%" title="Adobe Flash Player">
+              <embed wmode="transparent" src="http://122.225.7.5:81/v6/flash/神龙战士-1536X960.swf?IsAutoPlay=0" allowfullscreen="true" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="100%" height="100%" title="Adobe Flash Player">
             </object>
             <iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe>
           </div>
         </div>
       </div>
-      <div class="row row_block">
-        <div class="col-md-6">E3联赛</div>
-        <div class="col-md-6">日期控件</div>
-      </div>
-      <div class="row row_block">
-        <div class="col-md-6">栏目1</div>
-        <div class="col-md-6">栏目2</div>
+      <div class="row row_block league">
+        <div class="col-md-6 league_title">
+          <p>E3联赛</p>
+          <div class="league_wrapper">
+            <img src="">
+          </div>
+        </div>
+        <div class="col-md-6 league_schedule">
+          <div id='calendar'></div>
+          <div class="league_btn center-block">
+            <a href="">赛程安排</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 </body>
+<script type="text/javascript" src="lib/fullcalendar/moment.min.js"></script>
 <!-- JQuery core JS -->
 <script src="lib/jquery/jquery-3.2.1.min.js"></script>
 <!-- Bootstrap core JS -->
 <script src="lib/bootstrap/bootstrap.min.js"></script>
+<!-- Fullcalendar core JS -->
+<script src="lib/fullcalendar/fullcalendar.min.js"></script>
+
+<script src="lib/fullcalendar/locale/zh-cn.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
+  $('#calendar').fullCalendar({
+  	header: false,
+  	firstDay: 0,
+    height: 380,
+    contentHeight: 380,
+    defaultDate: '2017-05-12',
+    navLinks: false, // can click day/week names to navigate views
+    editable: false,
+    eventLimit: true, // allow "more" link when too many events
+    events: [{
+      title: 'All Day Event',
+      start: '2017-05-01',
+      end: '2017-05-01'
+    }, {
+      title: 'Long Event',
+      start: '2017-05-07',
+      end: '2017-05-10'
+    }, {
+      id: 999,
+      title: 'Repeating Event',
+      start: '2017-05-09T16:00:00'
+    }, {
+      id: 999,
+      title: 'Repeating Event',
+      start: '2017-05-16T16:00:00'
+    }, {
+      title: 'Conference',
+      start: '2017-05-11',
+      end: '2017-05-13'
+    }, {
+      title: 'Meeting',
+      start: '2017-05-12T10:30:00',
+      end: '2017-05-12T12:30:00'
+    }, {
+      title: 'Lunch',
+      start: '2017-05-12T12:00:00'
+    }, {
+      title: 'Meeting',
+      start: '2017-05-12T14:30:00'
+    }, {
+      title: 'Happy Hour',
+      start: '2017-05-12T17:30:00'
+    }, {
+      title: 'Dinner',
+      start: '2017-05-12T20:00:00'
+    }, {
+      title: 'Birthday Party',
+      start: '2017-05-13T07:00:00'
+    }, {
+      title: 'Click for Google',
+      url: 'http://google.com/',
+      start: '2017-05-28'
+    }]
+  });
 
 });
 </script>
