@@ -110,7 +110,7 @@
 .right_conten>ul>li p span {
   display: block;
   font-size: 12px;
-  background: url(../../../res/page/index/mem-icos.png) no-repeat;
+  margin-left: 5px;
   color: #797979;
 }
 
