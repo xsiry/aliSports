@@ -186,12 +186,13 @@ a, a:hover, a:focus {
   border: 1px solid #bbbbbb;
 }
 
-nav {
+nav.x-page {
   position: absolute;
   bottom: 0;
+  left: 20px;
 }
 
-nav>ul.pagination {
+nav.x-page>ul.pagination {
   margin: 0;
 }
 
