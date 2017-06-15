@@ -196,6 +196,9 @@ nav.x-page>ul.pagination {
   margin: 0;
 }
 
+ul {
+  list-style-type: none;
+}
 /*赛程样式*/
 #calendar {
 	max-width: 900px;

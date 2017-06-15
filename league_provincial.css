@@ -1,6 +1,3 @@
-.right_conten>div:first-child>ul {
-	list-style-type: none;
-}
 .right_conten>div:first-child>ul>li {
 	float: left;
 	margin-left: 20px;
