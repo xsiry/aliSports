@@ -12,7 +12,9 @@ section {
   display: box;
 }
 
-a, a:hover, a:focus {
+a,
+a:hover,
+a:focus {
   text-decoration: none;
 }
 
@@ -50,7 +52,7 @@ a, a:hover, a:focus {
 .x-menus>ul>li.active {
   color: #fff;
   background-color: #ff7043;
-  border:1px solid #f4511e;
+  border: 1px solid #f4511e;
 }
 
 .x-menus>ul>li.active>a {
@@ -199,33 +201,46 @@ nav.x-page>ul.pagination {
 ul {
   list-style-type: none;
 }
+
+
 /*赛程样式*/
+
 #calendar {
-	max-width: 900px;
-	margin: 0 auto;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.fc-unthemed .fc-content, .fc-unthemed .fc-divider, .fc-unthemed .fc-list-heading td, .fc-unthemed .fc-list-view, .fc-unthemed .fc-popover, .fc-unthemed .fc-row, .fc-unthemed tbody, .fc-unthemed td, .fc-unthemed th, .fc-unthemed thead {
-    border-color: hsla(0, 0%, 100%, 0);
+.fc-unthemed .fc-content,
+.fc-unthemed .fc-divider,
+.fc-unthemed .fc-list-heading td,
+.fc-unthemed .fc-list-view,
+.fc-unthemed .fc-popover,
+.fc-unthemed .fc-row,
+.fc-unthemed tbody,
+.fc-unthemed td,
+.fc-unthemed th,
+.fc-unthemed thead {
+  border-color: hsla(0, 0%, 100%, 0);
 }
 
 .fc-unthemed td.fc-head-container {
-	border-bottom-color:#d81b60;
+  border-bottom-color: #d81b60;
 }
 
 #calendar a.fc-day-number {
-    color: #525e71;
+  color: #525e71;
 }
 
 #calendar span.fc-day-number {
-    color: #525e71;
+  color: #525e71;
 }
 
 #calendar a.fc-more {
-	color: #525e71;
+  color: #525e71;
 }
 
-.fc-row .fc-content-skeleton td, .fc-row .fc-helper-skeleton td {
+.fc-row .fc-content-skeleton td,
+.fc-row .fc-helper-skeleton td {
   /*text-align: center;*/
 }
 
@@ -238,6 +253,6 @@ ul {
   border: 1px solid #dd191d;
 }
 
-.fc-day-grid>div:last-child{
+.fc-day-grid>div:last-child {
   display: none;
 }

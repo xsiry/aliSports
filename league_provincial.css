@@ -1,6 +1,6 @@
 .right_conten>div:first-child>ul>li {
-	float: left;
-	margin-left: 20px;
+  float: left;
+  margin-left: 20px;
 }
 .prov_top {
 	display: -moz-box;
