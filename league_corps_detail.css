@@ -40,15 +40,15 @@
 }
 
 .player_details>div {
-  padding: 5px;
+  padding: 0px 5px;
 }
 
 .player_details>div:first-child {
-  width: 400px;
+  width: 600px;
 }
 
 .player_details>div:first-child>img {
-  width: 400px;
+  width: 600px;
   height: 285px;
 }
 
@@ -60,8 +60,8 @@
 }
 
 .img-circle {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 }
 
 .head_portrait {

@@ -10,6 +10,7 @@ section {
   display: -moz-box;
   display: -webkit-box;
   display: box;
+  height: 100%;
 }
 
 a,
@@ -65,7 +66,7 @@ a:focus {
   -moz-box-flex: 1;
   -webkit-box-flex: 1;
   box-flex: 1;
-  border: 1px solid #dddddd;
+  /*border: 1px solid #dddddd;*/
 }
 
 .x_welcome {
@@ -79,6 +80,7 @@ a:focus {
 
 .right_conten>div:last-child {
   border-bottom: 1px solid #dddddd;
+  margin-bottom: 15px;
 }
 
 .right_conten>div:last-child>div:last-child {
@@ -86,7 +88,7 @@ a:focus {
 }
 
 .row_block>div {
-  height: 330px;
+  height: 450px;
 }
 
 .deal {
@@ -98,8 +100,8 @@ a:focus {
 }
 
 .deal_wrapper {
-  width: 290px;
-  height: 190px;
+  width: 650px;
+  height: 300px;
   overflow: hidden;
   border-radius: inherit;
   background-color: #e8e8e8;
@@ -144,8 +146,8 @@ a:focus {
 }
 
 .league_wrapper {
-  width: 348px;
-  height: 233px;
+  width: 650px;
+  height: 350px;
   overflow: hidden;
   border-radius: inherit;
   background-color: #e8e8e8;
@@ -154,7 +156,7 @@ a:focus {
 
 .league_btn {
   position: relative;
-  bottom: -10px;
+  bottom: -30px;
   background-color: #ff7043;
   border: 1px solid #f4511e;
   border-radius: 8px;
@@ -200,13 +202,18 @@ ul {
 
 
 /*赛程样式*/
-
 #calendar {
   max-width: 900px;
   margin: 0 auto;
 }
+#calendar .fc-body {
+  overflow-y: hidden !important;
+}
+#calendar .fc-scroller.fc-day-grid-container {
+ overflow-y: hidden !important;
+}
 
-.fc-scroller.fc-day-grid-container{
+#calendar .fc-day-grid.fc-unselectable {
   overflow-y: hidden !important;
 }
 

@@ -4,10 +4,10 @@
 
 .new_author {
   color: #7d787d;
-  font-size: 8.3px;
+  font-size: 14px;
   white-space: nowrap;
   border-bottom: 1px solid #bbbbbb;
-  height: 15px;
+  height: 18px;
 }
 
 .new_author>div {

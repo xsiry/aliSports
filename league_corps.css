@@ -21,6 +21,12 @@
 
 .right_conten>div:last-child>ul>li>a>div {
   display: block;
-  width: 220px;
-  height: 300px;
+  width: 450px;
+  height: 400px;
 }
+
+.right_conten>div:last-child>ul>li>a>div img {
+  width: 450px;
+}
+
+

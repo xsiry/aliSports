@@ -5,12 +5,11 @@
 .right_conten>ul>li {
   float: left;
   display: inline-block;
-  margin-bottom: 20px;
+  margin: 50px;
 }
 
 .right_conten>ul>li a {
   background: #fff;
-  margin-right: 10px;
   display: block;
   border-bottom: 3px solid transparent;
   transition: all .3s ease-in;
@@ -44,6 +43,11 @@
   opacity: 0;
   filter: alpha(opacity=0);
   transition: all .3s ease;
+}
+
+.right_conten>ul>li .imgbox>img {
+  width: 400px;
+  height: 300px;
 }
 
 .right_conten>ul>li .mes {
