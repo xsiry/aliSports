@@ -206,6 +206,10 @@ ul {
   margin: 0 auto;
 }
 
+.fc-scroller.fc-day-grid-container{
+  overflow-y: hidden !important;
+}
+
 .fc-unthemed .fc-content,
 .fc-unthemed .fc-divider,
 .fc-unthemed .fc-list-heading td,
